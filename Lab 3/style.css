@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    background: #333;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px #111;
+    width: 320px;
+    padding: 20px;
+}
+
+.display {
+    background: #444;
+    color: #fff;
+    text-align: right;
+    padding: 12px 14px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    min-height: 64px;
+    letter-spacing: 1.2px;
+    box-shadow: 0 2px 6px #222;
+}
+
+.expression {
+    opacity: 0.8;
+    font-size: 0.95em;
+    min-height: 22px;
+    word-break: break-all;
+}
+
+.result {
+    font-size: 2.2em;
+    margin-top: 4px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    height: 56px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.08s ease, background 0.12s ease;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    background: rgba(255,255,255,0.12);
+}
+
+.op {
+    background: #ff9500;
+    color: #fff;
+}
+
+.btn.zero {
+    grid-column: span 2;
+    border-radius: 12px;
+    width: 100%;
+}
+
+/* Ensure operator buttons are the rightmost column */
+.buttons > .op:nth-child(4),
+.buttons > .op:nth-child(8),
+.buttons > .op:nth-child(12),
+.buttons > .op:nth-child(16),
+.buttons > .op:nth-child(20) {
+    grid-column: 4;
+}
+
+/* Make sure equal sits at bottom-right spot visually */
+.buttons .equal {
+    grid-column: 4;
+}

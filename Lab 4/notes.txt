@@ -1,0 +1,14 @@
+Build a simple to do list 
+- Build a simple to do list web page app using HTML, CSS, and JavaScript
+- HTML Structure (Minimum Requirements):
+    - An Inpust Field for Tasks Description.
+    - An "Add task" button.
+    - A list <ul> or <div> to display Tasks
+- JavaScript Structure (Minimum Requirements):
+    - Store tasks in an array, Web Cache, or JSON File (I prefer the JSON idea)
+    - Add tasks dynamically to the page using innerHTMl or DOM manipulation
+    - Allow toggling a task's completion state by clicking on it (Change text style or color)
+    - Allow Deleting a task.
+    - Use Simple CSS to mark completed tasks with a strike-through or color change.
+
+- Make it look good (Experiment with css but not advanced CSS as I will have to explain it, so make it simple)

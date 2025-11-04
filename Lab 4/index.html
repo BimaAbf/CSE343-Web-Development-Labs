@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple To‑Do List</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="app">
+            <h1>To‑Do List</h1>
+
+            <form id="todo-form" class="todo-form" autocomplete="off">
+                <input
+                    id="task-input"
+                    type="text"
+                    placeholder="What do you need to do?"
+                    aria-label="Task description"
+                    required
+                />
+                <button id="add-btn" type="submit" class="btn">Add task</button>
+            </form>
+
+            <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+        </main>
+
+        <script src="app.js" defer></script>
+    </body>
+    </html>
